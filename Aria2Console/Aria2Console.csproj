@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  
+	<BaseOutputPath>D:\MyProgram\debug\cs\Aria2Console\</BaseOutputPath>
+	<IntermediateOutputPath>D:\MyProgram\debug\cs\Aria2Console\obj\Aria2Consol</IntermediateOutputPath>
+	<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>
+	<ApplicationIcon>img\128.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="img\128.ico" />
+  </ItemGroup>
+
+</Project>

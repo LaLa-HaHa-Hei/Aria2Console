@@ -6,11 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-	  
-	<BaseOutputPath>D:\MyProgram\debug\cs\Aria2Console\</BaseOutputPath>
-	<IntermediateOutputPath>D:\MyProgram\debug\cs\Aria2Console\obj\Aria2Consol</IntermediateOutputPath>
-	<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>
-	<ApplicationIcon>img\128.ico</ApplicationIcon>
+    <ApplicationIcon>img\128.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

@@ -6,10 +6,6 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-	  
-	<BaseOutputPath>D:\MyProgram\debug\cs\Aria2Console\</BaseOutputPath>
-	<IntermediateOutputPath>D:\MyProgram\debug\cs\Aria2Console\obj\WebView</IntermediateOutputPath>
-	<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>
   </PropertyGroup>
 
   <ItemGroup>

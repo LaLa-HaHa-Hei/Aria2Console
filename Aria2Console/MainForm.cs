@@ -72,10 +72,14 @@ namespace Aria2Console
         }
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            _aria2Process?.Kill();
-            //KillAria2Progress();
-            TrayNotifyIcon.Dispose();
-            Environment.Exit(0);
+            var result = MessageBox.Show("确定退出程序？", "退出", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                _aria2Process?.Kill();
+                //KillAria2Progress();
+                TrayNotifyIcon.Dispose();
+                Environment.Exit(0);
+            }
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -188,9 +192,13 @@ namespace Aria2Console
 
         private void ReloadAria2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            _aria2Process?.Kill();
-            _aria2ConsoleHandle = IntPtr.Zero;
-            LoadAria2();
+            var result = MessageBox.Show("确定重启aria2？可能无法保存当前状态", "重启", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                _aria2Process?.Kill();
+                _aria2ConsoleHandle = IntPtr.Zero;
+                LoadAria2();
+            }
         }
     }
 }
